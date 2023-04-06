@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --ff-timer: 'Roboto', sans-serif;
+    --text-color: #323238;
+
+    --base-color: 240;
+    --bg-primary-light: hsla(var(--base-color), 9%, 89%, 1);
+    --primary-color: hsl(var(--base-color), 5.7%, 20.8%);
+    --bg-secondary-light: hsl(193.9, 97.5%, 31.2%);
+    --secondary-color: hsl(0, 0%, 100%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    right: 6.0rem;
+    top: 6.0rem;
+}
+
+header img {
+    position: absolute;
+    right: 6.0rem;
+    top: 6.0rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    gap: 19.2rem;
+
+    min-width: 82.1rem;
+
+    align-items: center;
+
+}
+
+main div #timer {
+    display: flex;
+
+    font-family: var(--ff-timer);
+    font-weight: 500;
+    font-size: 12.6166rem;
+    line-height: 14.8rem;
+}
+
+button {
+    border: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+
+#controls {
+    display: flex;
+    gap: 4.0rem;
+}
+
+#natural-sounds {
+    display: grid;
+    grid-template-areas: "A B"
+    "C D";
+    gap: 3.2rem
+}
+
+#natural-sounds button {
+    background: var(--bg-primary-light);
+    border-radius: 2.4rem;
+    padding: 2.4rem 4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+
+    display: grid;
+    grid-template-areas: 
+    "A"
+    "B";
+
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+   
+    cursor: pointer;
+}
+
+.forest svg path,
+.rain svg path,
+.coffee-shop svg path,
+.fireplace svg path {
+    fill: var(--primary-color);
+}
+
+input circle{
+    position: relative;
+    color: #FFFFFF;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 9rem;
+    height: .5rem;
+    border-radius: 0.4rem;
+    background-color: #323238;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 9rem;
+    height: 5px;
+    background: none;
+    border: none;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin-top: -0.5rem;
+} 
